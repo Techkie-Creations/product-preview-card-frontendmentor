@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 3rem auto 2rem auto;
+}
+
+.card .img {
+    width: 46.4%;
+    border-radius: 1rem 0 0 1rem;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.card .main-text {
+    width: 50%;
+    padding: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 1rem 1rem 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card .main-text h1 {
+    font-size: calc(100% * 3);
+    margin-top: 0;
+    padding: 0;
+    font-family: 'Fraunces';
+}
+
+.card .main-text .sub-head {
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+    margin-top: 0;
+    color: hsl(228, 12%, 48%);
+}
+
+.card .main-text .text {
+    font-size: calc(100% * 1.2);
+    color: hsl(228, 12%, 48%);
+    margin-top: 0;
+}
+
+.card .main-text .price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.card .main-text .price h2 {
+    font-size: calc(100% * 2.5);
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    margin: 0 2rem 0 0;
+}
+
+.card .main-text .price .cancel {
+    text-decoration: line-through;
+    font-size: 1.2rem;
+}
+
+.card .main-text button {
+    width: 100%;
+    height: 2.7rem;
+    border-radius: .4rem;
+    border: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 1.6rem;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card .main-text button img {
+    scale: 1.4;
+}
+
+.card .main-text button:hover {
+    opacity: .9;
+}
+
+.card .main-text button:active {
+    scale: .9;
+}
+
+.attribution {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.attribution p {
+    font-weight: 700;
+}
+
+.attribution a {
+    color: hsl(158, 36%, 37%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.attribution a:hover {
+    color: darkred;
+}
+
+@media screen and (max-width: 740px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card .img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0 !important;
+        height: 40vh !important;
+    }
+
+    .card .main-text {
+        width: 100%;
+        border-radius: 0 0 1rem 1rem !important;
+        height: auto !important;
+    }
+}
